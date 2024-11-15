@@ -22,7 +22,7 @@ class ExploreFragment : Fragment() {
             setContent {
                 ExploreScreen(
                     navigateToProductList = { category ->
-                        navigateToProductList(category.id, category.name!!)
+                        navigateToProductList(category.name!!, category.id)
                     },
                     navigateToProductDetail = { product ->
                          navigateToProductDetail(product.id)
